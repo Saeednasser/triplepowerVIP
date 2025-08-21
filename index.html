@@ -1,22 +1,63 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <title>فلتر منصة القوة الثلاثية | TriplePower Filter</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TriplePower | فلتر اختراق الشموع</title>
+  <meta name="description" content="لوحة تفاعلية لاكتشاف اختراقات الشموع وعرض حالة السهم (يومي/أسبوعي/شهري) مع روابط مباشرة إلى TradingView.">
 
-  <!-- Open Graph -->
+  <!-- Canonical (مهم لقرّاء المعاينة) -->
+  <link rel="canonical" href="https://saeednasser.github.io/triplepowerVIP/">
+
+  <!-- Open Graph (واتساب/فيسبوك/لينكدإن) -->
   <meta property="og:title" content="TriplePower | فلتر اختراق الشموع">
-  <meta property="og:description" content="لوحة تفاعلية لاكتشاف اختراقات الشموع وعرض حالة السهم (يومي/أسبوعي/شهري) مع روابط TradingView.">
-  <meta property="og:image" content="https://USERNAME.github.io/REPO/og.png">
-  <meta property="og:url" content="https://USERNAME.github.io/REPO/">
+  <meta property="og:description" content="اكتشف الاختراقات سريعاً مع عرض حالة السهم عبر الفواصل الزمنية وروابط TradingView.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TriplePower Filter">
+  <meta property="og:url" content="https://saeednasser.github.io/triplepowerVIP/">
+  <meta property="og:image" content="https://saeednasser.github.io/triplepowerVIP/og.png?v=1">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ar_AR">
-  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- تحويل فوري للتطبيق -->
-  <meta http-equiv="refresh" content="0; url=https://tradingview-triplepower3.streamlit.app/">
+  <!-- Twitter Card (اختياري) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TriplePower | فلتر اختراق الشموع">
+  <meta name="twitter:description" content="لوحة تفاعلية لاكتشاف اختراقات الشموع وحالة السهم (D/W/M).">
+  <meta name="twitter:image" content="https://saeednasser.github.io/triplepowerVIP/og.png?v=1">
+
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:#0b1220;color:#e5eef7;display:grid;place-items:center;height:100vh}
+    .card{max-width:720px;padding:28px 22px;background:#0f172a;border:1px solid #1f2a44;border-radius:16px;text-align:center;line-height:1.7;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .title{font-size:22px;margin:0 0 6px}
+    .desc{opacity:.9;margin:0 0 18px}
+    a.btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid #1f2a44;text-decoration:none;color:#e5eef7}
+    a.btn:hover{background:#111b35}
+  </style>
+
+  <!-- تحويل للمستخدمين فقط (العناكب لا تنفّذ JS) -->
+  <script>
+    (function () {
+      var target = "https://tradingview-triplepower3.streamlit.app/";
+      var ua = (navigator.userAgent || "").toLowerCase();
+      var isBot = /facebookexternalhit|whatsapp|twitterbot|telegram|slackbot|linkedinbot|discordbot/.test(ua);
+      if (!isBot) {
+        setTimeout(function () { location.replace(target); }, 120);
+      }
+    })();
+  </script>
 </head>
 <body>
-  <p>سيتم تحويلك للتطبيق… <a href="https://tradingview-triplepower3.streamlit.app/">اضغط هنا</a></p>
+  <main class="card">
+    <h1 class="title">يتم تحويلك إلى تطبيق TriplePower…</h1>
+    <p class="desc">إن لم يتم التحويل تلقائيًا، اضغط الزر التالي:</p>
+    <p><a class="btn" href="https://tradingview-triplepower3.streamlit.app/">فتح التطبيق الآن</a></p>
+  </main>
+
+  <!-- فallback بدون جافاسكريبت -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://tradingview-triplepower3.streamlit.app/">
+  </noscript>
 </body>
 </html>
